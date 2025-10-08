@@ -1,13 +1,6 @@
 pipeline {
     agent any
-
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', credentialsId: 'github-pat', url: 'https://github.com/still-breathing/ci_cd_with_jenkins.git'
-            }
-        }
-
         stage('Setup Python') {
             steps {
                 sh 'python3 --version'

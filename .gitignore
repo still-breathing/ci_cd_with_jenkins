@@ -1,0 +1,12 @@
+# Ignore Jenkins data
+jenkins_home/
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments (if any)
+venv/
+.env

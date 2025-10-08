@@ -4,14 +4,15 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', credentialsId: 'github-pat', url: 'https://api.github.com/users/still-breathing/ci_cd_with_jenkins.git'
+                git branch: 'main', credentialsId: 'github-pat', url: 'https://github.com/still-breathing/ci_cd_with_jenkins.git'
             }
         }
 
         stage('Setup Python') {
             steps {
-                sh 'python --version'
-                sh 'pip install -r requirements.txt || echo "No requirements.txt found"'
+                sh 'python3 --version'
+                sh 'python3 -m pip install -r requirements.txt || echo "No requirements.txt found"'
+
             }
         }
 

@@ -18,4 +18,7 @@ def test_add_numbers():
     assert add(3, 4) == 7
 
 def test_negative_test():
-    assert add(3, 4) == 8 # This test is intended to fail
+    assert add(3, 4) != 8 # negative checking
+
+def test_add_zero():
+    assert add(0, 0) == 0

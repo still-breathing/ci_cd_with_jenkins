@@ -1,12 +1,18 @@
-# Ignore Jenkins data
+# Jenkins data
 jenkins_home/
-*.log
 
 # Python cache
 __pycache__/
 *.pyc
 *.pyo
 
-# Virtual environments (if any)
+# Python virtual environments
 venv/
 .env
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
